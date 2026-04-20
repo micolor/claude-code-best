@@ -1,16 +1,68 @@
 {
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "echo \"[$(date '+%Y-%m-%d %H:%M:%S')] HOOK 触发 - 文件修改\" >> logs/hooks.log",
-            "shell": "bash"
-          }
-        ]
-      }
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(curl:*)",
+      "Bash(/plugin marketplace:*)",
+      "Bash(/plugin install:*)",
+      "Bash(claude:*)",
+      "Bash(brew upgrade:*)",
+      "Bash(brew update:*)",
+      "Bash(brew info:*)",
+      "Bash(brew list:*)",
+      "Bash(hash -r)",
+      "mcp__plugin_superpowers-chrome_chrome__use_browser",
+      "Bash(npm show:*)",
+      "Bash(npm pack:*)",
+      "Bash(tar -xzO package/README.md)",
+      "Bash(npx @neverinfamous/mysql-mcp --help)",
+      "Bash(npm install:*)",
+      "Bash(mysql-mcp:*)",
+      "Bash(node /Users/anwen/.nvm/versions/node/v25.5.0/lib/node_modules/@neverinfamous/mysql-mcp/dist/cli.js --transport stdio --mysql \"mysql://root:1qaz%40k@120.92.144.127:3306/rich-member\")",
+      "Bash(mysql:*)",
+      "Bash(npm list:*)",
+      "Bash(node:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git clone *)",
+      "Bash(unzip -o /tmp/claude-best-practice.zip -d /tmp/)",
+      "Read(//tmp/**)",
+      "Bash(rm -f ~/.claude/agents/time-agent.md)",
+      "Bash(rm -f ~/.claude/agents/weather-agent.md)",
+      "Bash(rm -rf ~/.claude/agents/workflows/)",
+      "Bash(rm -f ~/.claude/commands/time-command.md)",
+      "Bash(rm -f ~/.claude/commands/weather-orchestrator.md)",
+      "Bash(rm -f ~/.claude/agents/development-workflows-research-agent.md)",
+      "Bash(rm -f ~/.claude/agents/presentation-curator.md)",
+      "Bash(rm -rf /tmp/claude-code-best-practice-main)",
+      "Bash(rm -rf /tmp/claude-best-practice.zip)",
+      "Bash(npx *)",
+      "Bash(ghostty +list-themes)",
+      "Bash(open -a Ghostty --args +list-themes)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty +list-themes)",
+      "WebFetch(domain:ghostty.org)",
+      "Bash(defaults read *)",
+      "Bash(mdls -name kMDItemVersion /Applications/Ghostty.app)",
+      "Bash(mdfind \"kMDItemCFBundleIdentifier == 'com.mitchellh.ghostty'\")",
+      "Read(//Users/**)",
+      "Bash(rm /Applications/Ghostty.app)",
+      "Bash(ln -s /opt/homebrew/Caskroom/ghostty/1.3.1/Ghostty.app /Applications/Ghostty.app)",
+      "Bash(rm /opt/homebrew/Caskroom/ghostty/1.3.1/Ghostty.app)",
+      "Bash(brew reinstall *)",
+      "Bash(/Applications/Ghostty.app/Contents/MacOS/ghostty *)",
+      "Bash(pkill -f \"ghostty.*config.test\")",
+      "Bash(pkill -f \"ghostty.*test2\")",
+      "Bash(pkill -f \"ghostty.*test3\")",
+      "Bash(pkill -f \"ghostty.*test4\")",
+      "Bash(pkill -f \"ghostty.*test_si\")",
+      "Bash(pkill -f \"ghostty.*test_wo\")",
+      "Bash(defaults write *)",
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git checkout *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
-  }
+  },
+  "enabledPlugins": {}
 }
