@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[$(date '+%Y-%m-%d %H:%M:%S')] HOOK 触发 - 文件修改\" >> logs/hooks.log",
+            "shell": "bash"
+          }
+        ]
+      }
+    ]
+  }
+}
