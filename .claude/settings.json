@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_superpowers-chrome_chrome__use_browser",
+      "WebSearch",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:prg.sh)",
+      "WebFetch(domain:claudeskills.info)",
+      "WebFetch(domain:angelo-lima.fr)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.gradually.ai)",
+      "WebFetch(domain:linux.do)",
+      "Skill(update-config)",
+      "Bash(osascript *)",
+      "Skill(keybindings-help)",
+      "Bash(claude mcp *)",
+      "Bash(open *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "github"
+  ]
+}
